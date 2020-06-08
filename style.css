@@ -44,3 +44,81 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+/* classi fast per impostare velocemente istruzioni grid, flex o altre*/
+.flex{display: flex;}
+.flex-column{flex-direction: column;}
+.grid{display: grid;}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+}
+.myp-0_5{padding: 0.5rem;}
+.myp-1{padding: 1rem;}
+.myp-1_5{padding: 1.5rem;}
+
+/* classi fast*/
+
+.logo img{
+    width: 80px;
+    height: 70px;
+}
+header{
+    background-color: var(--main-bg-header);
+    color: var(--color5);
+    grid-template-rows: 1fr 4fr 1fr;
+}
+header .top{
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    background-color: rgba(34, 46, 80, 0.4);
+}
+ul{
+    justify-content: space-around;
+}
+.hero{
+    background: url(img/trabby_hero.jpg) center center no-repeat;
+    background-size: cover;
+}
+nav a{
+    text-decoration: none;
+    color: var(--color5);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+nav li{
+    min-width: 60px;
+}
+.cta{
+ justify-content: center;
+ align-items: center;
+}
+.cta .button{
+    padding: 1.2rem 1.7rem;
+    background-color: var(--color2);
+    text-align: center;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.cta a{
+    text-decoration: none;
+    color: var(--main-color-txt);
+    text-transform: uppercase;
+}
+.cta .button:hover{
+    background-color: var(--color4);
+    color: var(--main-color-txt);
+}
+
+section{
+    padding: 20px 10px 20px;
+}
+section.slogan{
+    background-color: var(--color5);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+section.slogan p{font-size: 2rem;}
