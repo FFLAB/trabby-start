@@ -66,7 +66,7 @@ img{
 header{
     background-color: var(--main-bg-header);
     color: var(--color5);
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr; /* crea la struttura a tre fasce LOGO+NAV/CTA con immagine di sfondo/SOCIAL ICONS*/
 }
 header .top{
     grid-template-columns: 2fr 1fr;
@@ -122,3 +122,13 @@ section.slogan{
     padding: 30px;
 }
 section.slogan p{font-size: 2rem;}
+
+.services.col-3{
+    color: #ffffff;
+    row-gap: 1rem;
+}
+.services article{
+    background-color: var(--color2);
+}
+.card-title{text-align: center;}
+.card-body p{padding: 0 2rem;}
