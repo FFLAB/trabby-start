@@ -1,0 +1,46 @@
+/*
+CSS FOR TRABBY
+MOHOLE Exercise by Francesco Riggio
+*/
+
+/* Import my chosen GFonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin');
+
+
+/* My palette*/
+:root {
+    --main-color-txt: rgba(4, 4, 4, 1);
+    --main-bg-header: rgba(34, 46, 80, 0.4);
+    --color2: rgba(0, 121, 145, 1);
+    --color3: rgba(67, 154, 134, 1);
+    --color4: rgba(188, 216, 193, 1);
+    --color5: rgba(233, 217, 133, 1);
+  }
+
+/* N.B.: non faccio reset qui, in quanto carico nel html il file normalize.css per il reset */
+/* NON USO GRID AREAS, AVENDO UNA STRUTTURA A SECTION SENZA SIDEBAR
+è sufficiente l'incolonnamento di default (block) per Header, Main e Footer, e al loro interno ho diverse soluzioni
+a due, tre o una colonna, grid e flex.
+*/
+
+/* Miei istruzioni principali */
+body{
+    font-size: 20px;
+    color: var(--main-color-txt);
+    font-family: 'Cabin', sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-weight: 700;
+}
+p{
+font-size: 1rem;
+}
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
