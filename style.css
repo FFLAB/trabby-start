@@ -157,6 +157,13 @@ section.slogan p{font-size: 2rem;}
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
     }
+    .youtube{
+        width: 560px;
+        height: 315px;
+    }
+    footer.col-3{
+        column-gap: 0;
+    }
 
 }
 
@@ -171,4 +178,15 @@ section.slogan p{font-size: 2rem;}
     color: #ffffff;
     font-size: 1.5rem;
     line-height: 1.5;
+}
+/* allineo al centro il video embed */
+.spot{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .col{
+    background-color: var(--color2);
+    color: #ffffff;
+    padding: 50px;
 }
