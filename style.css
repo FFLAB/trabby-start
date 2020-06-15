@@ -132,3 +132,17 @@ section.slogan p{font-size: 2rem;}
 }
 .card-title{text-align: center;}
 .card-body p{padding: 0 2rem;}
+
+/* icone social */
+.social-brands{
+    justify-content: flex-end;
+}
+.fab{
+    padding: 10px;
+    font-size: 2rem;
+    color: var(--main-color-txt);
+    text-decoration: none;
+}
+.social-brands a:hover{
+    opacity: 0.5;
+}
