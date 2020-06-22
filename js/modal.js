@@ -26,11 +26,10 @@ function toggleModal() {
 
 // my add: close with ESC
 document.addEventListener('keydown', function(e) {
-    let keyCode = e.keyCode;
-    if (keyCode === 27) {
-    modal.style.display = 'none';
-    detachModalListeners(modal); 
-    }
+  let keyCode = e.keyCode;
+  if (keyCode === 27) {
+ //my action to close ... ?
+  }
 });
 
 btn.addEventListener('click', toggleModal);
