@@ -29,6 +29,8 @@ document.addEventListener('keydown', function(e) {
   let keyCode = e.keyCode;
   if (keyCode === 27) {
  //my action to close ... ?
+ modal.style.display = 'none';
+ detachModalListeners(modal); 
   }
 });
 
