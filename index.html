@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS per modale -->
     <link rel="stylesheet" href="modal.css">
-
+    <link rel="stylesheet" href="select-css.css">
     <!-- mio style -->
     <link rel="stylesheet" href="style.css">
     
@@ -41,6 +41,14 @@
                         <li><a class="js-trigger" href="login.html">Login</a></li>
                     </ul>
                 </nav>
+                <form id="language" class="lang flex">
+                    <select id="selectbox" name="lang" class="select-css" onchange="javascript:location.href = this.value;">
+                        <option value="/it">Italiano</option>
+                        <option value="/en">Inglese</option>
+                        <option value="/gi">Giargiana</option>
+                        <option value="/im">Imbruttito</option>
+                    </select>
+                </form>
             </div>
 
             <!-- CTA Registrati -->
@@ -97,7 +105,7 @@
 
             <!-- fascia a 2 box -->
             <div class="energy grid col-2 myp-0_5">
-                <article class="card">
+                <article class="card" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="50">
                     <div class="card-body">
                         <img src="img/energy700.png" alt="energy">
                     </div>
@@ -106,7 +114,7 @@
                     </div>
 
                 </article>
-                <article class="card">
+                <article class="card" data-aos="slide-left" data-aos-duration="1000" data-aos-delay="50">
                     <div class="card-title">
                         <h4>Energia dagli anni '80</h4>
                     </div>
@@ -121,15 +129,145 @@
 
         </section>
 
+        <section id="flotta" class="full-height">
+                
+         
+            <h2 class="tac">La nostra grande flotta</h2>
+            <ul class="grid card-list col-4">
+                 <li id="babyface" class="card-item">
+                    <div class="card-title">
+                        <h3>Trabby Babyface</h3>
+                    </div>
+                    <figure class="image">
+                        <img src="img/fl1.jpg" alt="">
+                    </figure>
+                    <div class="card-footer grid col-2-all">
+                        <div class="el-price">
+                            10€/h
+                        </div>
+                        <div class="el-info">
+                            <ul>
+                                <li>Avvio: manovella</li>
+                                <li>Contatore Geiger</li>
+                                <li>Sensore di capitalismo</li>
+                                <li>Piano Quinquennale</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="zooropa" class="card-item">
+                    <div class="card-title">
+                        <h3>Trabby Zooropa</h3>
+                    </div>
+                    <figure class="image">
+                        <img src="img/fl2.jpg" alt="">
+                    </figure>
+                    <div class="card-footer grid col-2-all">
+                        <div class="el-price">
+                            15€/h
+                        </div>
+                        <div class="el-info">
+                            <ul>
+                                <li>Avvio: quantistico</li>
+                                <li>1 Gatto di Schrödinger</li>
+                                <li>Falce + Martello</li>
+                                <li>Sedili Ribaltabili</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="lemon" class="card-item">
+                    <div class="card-title">
+                        <h3>Trabby Lemon </h3>
+                    </div>
+                    <figure class="image">
+                        <img src="img/fl1.jpg" alt="">
+                    </figure>
+                    <div class="card-footer grid col-2-all">
+                        <div class="el-price">
+                            17€/h
+                        </div>
+                        <div class="el-info">
+                            <ul>
+                                <li>Avvio: vocale</li>
+                                <li>Mignon di Vodka</li>
+                                <li>Cassetta di Little Tony</li>
+                                <li>Luci al neon</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                     <li id="numb" class="card-item">
+                    <div class="card-title">
+                        <h3>Trabby Numb</h3>
+                    </div>
+                    <figure class="image">
+                        <img src="img/fl2.jpg" alt="">
+                    </figure>
+                    <div class="card-footer grid col-2-all">
+                        <div class="el-price">
+                            20€/h
+                        </div>
+                        <div class="el-info">
+                            <ul>
+                                <li>Avvio: piezoelettrico</li>
+                                <li>Autista (Vito)</li>
+                                <li>Vinile dei CCCP</li>
+                                <li>Lindo Ferretti nel baule</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+            <h4 class="tac">Scegli il modello più adatto per ogni occasione di svago e rivoluzione.<br>Impressiona gli amici con il meglio della tecnologia automobilistica.</h4>
+        </section>
+
         <section id="video" class="flex flex-column spot">
             <iframe class="youtube" src="https://www.youtube.com/embed/videoseries?list=PLJWWkwrPIc33eG6MUBasFR4saTMPtd1ae" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3>Entusiasmanti spot! Prova su strada!</h3>
 
         </section>
 
+        <!-- FAQ -->
+        <section id="faq">
+            <div class="grid myp-1">
+                <div class="card tac" data-aos="zoom-in" data-aos-duration="1000">
+                    <h2>LE NOSTRE FAQ PER IL POPOLO</h2>
+                    <h3>
+                        <a href="#content-1" class="accordion-toggle">FAQ 1: Quanti anni sono garantite le vetture?</a>
+                    </h3>
+                    <div class="accordion-content" id="content-1">
+                        <p>Garantiamo le nostre vetture a vita. Finchè sarà in vita Michail Gorbaciov, almeno.</p>
+                    </div>
+                    <h3><a href="#content-2" class="accordion-toggle">FAQ 2: La ruota di scorta è già gonfiata?</a></h3>
+                    <div class="accordion-content" id="content-2">
+                        <p>Certo, ci soffiamo dentro ogni mattina.</p>
+                      
+                    </div>
+                <h3>
+                    <a href="#content-3" class="accordion-toggle">FAQ 3: Dove trovo la vettura più vicina?</a>
+                </h3>
+                <div class="accordion-content" id="content-3">
+                    <p>A fine 2021 gli allievi della scuola Mohole completeranno un'app apposita!</p>                        
+                </div>
+                <h3><a href="#content-4" class="accordion-toggle">FAQ 4: Le vetture possono implodere?</a></h3>
+                
+                <div class="accordion-content" id="content-4">
+                    <p>Le vetture sono sicure! Se sentite un ticchettio dal contatore Geiger allontanatevi di alcuni kilometri.</p> 
+                </div>
+            </div>
+
+        </div>
+           
+        </section>
+
     </main>
 
-    <footer class="grid col-3 full-height">
+    <footer class="grid col-3">
         <div class="col">
             <p>Sito realizzato per scopi didattici.</p>
             <p>Ogni informazione è fittizia.</p>
@@ -153,8 +291,7 @@
         <div class="overlay"></div>
         <div class="modal_content">
             <h2>Bella Zio</h2>
-            <iframe src="https://giphy.com/embed/l52CGyJ4LZPa0" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sandler-sentences-sounding-l52CGyJ4LZPa0">via GIPHY</a></p> 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti blanditiis magnam totam alias quis, inventore nemo cumque illo nihil sed dolorum ipsum numquam reprehenderit maxime, deleniti facilis molestiae asperiores labore!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti blanditiis magnam totam alias quis, inventore nemo cumque illo nihil sed dolorum ipsum numquam reprehenderit maxime, deleniti facilis molestiae asperiores labore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ipsa dolor modi nemo laudantium labore iusto, omnis facilis. Ex, adipisci!</p>
         
             <button title="Chiudi" class="close_modal">
                 <i class="fas fa-times"></i>
@@ -173,6 +310,11 @@
   </script>
   <!-- Script per modale -->
   <script src="js/modal.js"></script>
+  <!-- Accordion animato-->
+  <script src="js/accordion.js"></script>
+  <!-- select al caricamento della pagina -->
+  <!-- <script src="js/select.js"></script> -->
+  <!-- mio script -->
     <script src="js/app.js"></script>
 
     

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabby CarSharing</title>
+    <!-- CSS reset con normalize.css
+        https://necolas.github.io/normalize.css/
+        o npm install normalize.css
+
+        Scrolling con plugin JS Vanilla
+        https://hsnaydd.github.io/moveTo/demo/
+    -->
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="normalize.css">
+      <!-- Fontawesome icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
+    <!-- AOS animations CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS per modale -->
+    <link rel="stylesheet" href="modal.css">
+
+    <!-- mio style -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header id="one" class="hero grid full-height">
+            <div class="top grid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logotrabby_white.png" alt="logo trabby">
+                    </a>
+
+                </div>
+
+                <nav>
+                    <ul class="flex">
+                        <li><a class="js-trigger" href="#servizi">Servizi</a></li>
+                        <li><a class="js-trigger" href="#flotta">Flotta</a</li>
+                        <li><a class="js-trigger" href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- CTA Registrati -->
+            <div class="cta flex flex-column">
+                <a id="modal_opener" href="#">
+                    <div class="button">Registrati ora</div>
+                </a>
+            </div>
+
+            <!-- social buttons - completare a casa il posizionamento a destra, e colore nero e dimensione -->
+            <div class="flex social-brands">
+                <ul class="flex">
+                    <li><span class="fab fa-facebook"></span></li>
+                    <li><span class="fab fa-twitter"></span></li>
+                    <li><span class="fab fa-instagram"></span></li>
+                </ul>
+                
+            </div>
+    </header>
+
+    <main>
+        <section class="flex slogan">
+            <p>Il primo car sharing social(ista) in Italia, al servizio del proletariato moderno.</p>
+        </section>
+
+        <!-- section servizi con una fascia a 3 box e una a 2 -->
+        <section id="servizi" data-aos="fade-in" data-aos-duration="1500" data-aos-once="false" class="full-height">
+            <div class="services grid col-3 myp-0_5">
+                <article class="card" data-aos="flip-left" data-aos-duration="1500">
+                    <div class="card-body">
+                        <img src="img/trabbydeluxea.jpg" alt="lusso">
+                    </div>
+                    <div class="card-title">
+                        <h3>Lusso</h3>
+                    </div>
+                </article>
+                <article class="card" data-aos="flip-right" data-aos-duration="1500">
+                    <div class="card-body">
+                        <img src="img/trabbymech.jpg" alt="lusso">
+                    </div>
+                    <div class="card-title">
+                        <h3>Assistenza</h3>
+                    </div>
+                </article>
+                <article class="card" data-aos="flip-left" data-aos-duration="1500">
+                    <div class="card-body">
+                        <img src="img/trabby5.jpg" alt="lusso">
+                    </div>
+                    <div class="card-title">
+                        <h3>Fascino</h3>
+                    </div>
+                </article>
+            </div>
+
+            <!-- fascia a 2 box -->
+            <div class="energy grid col-2 myp-0_5">
+                <article class="card">
+                    <div class="card-body">
+                        <img src="img/energy700.png" alt="energy">
+                    </div>
+                    <div class="card-title">
+                        <h3>Da Chernobyl .... alla tua città!</h3>
+                    </div>
+
+                </article>
+                <article class="card">
+                    <div class="card-title">
+                        <h4>Energia dagli anni '80</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>L'energia nucleare fu scoperta nella seconda metà del XIX secolo da un chimico e un fisico, di cui oggi purtroppo non ci rimangono i nomi (oltre a tutto il resto). Come molte altre scoperte scientifiche, anche l'energia nucleare fu scoperta per caso: i due infatti stavano lavorando su come ottenere l'aroma di pino silvestre da una barra di uranio per produrre un bagnoschiuma a costi relativamente bassi. (Nonciclopedia)</p>
+                    </div>
+
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="video" class="flex flex-column spot">
+            <iframe class="youtube" src="https://www.youtube.com/embed/videoseries?list=PLJWWkwrPIc33eG6MUBasFR4saTMPtd1ae" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Entusiasmanti spot! Prova su strada!</h3>
+
+        </section>
+
+    </main>
+
+    <footer class="grid col-3 full-height">
+        <div class="col">
+            <p>Sito realizzato per scopi didattici.</p>
+            <p>Ogni informazione è fittizia.</p>
+            <p>Ogni espressione politica è per il LOL</p>
+        </div>
+        <div class="col">
+            <p>Scuola Mohole</p>
+            <p>Web e Digital Media</p>
+            <p>Giuseppe cancella la cache!</p>
+        </div>
+        <div class="col">
+            <p>Sito realizzato per scopi didattici.</p>
+            <p>Ogni informazione è fittizia.</p>
+            <p><a class="move js-trigger" href="#one" data-mt-duration="1500">Back to TOP</a></p>
+        </div>
+
+    </footer>
+
+    <!-- MODALE IN JS VANILLA e CSS (script modal.js e stile in modal.css) -->
+    <div class="modal" style="display: none">
+        <div class="overlay"></div>
+        <div class="modal_content">
+            <h2>Bella Zio</h2>
+            <iframe src="https://giphy.com/embed/l52CGyJ4LZPa0" width="480" height="273" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sandler-sentences-sounding-l52CGyJ4LZPa0">via GIPHY</a></p> 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti blanditiis magnam totam alias quis, inventore nemo cumque illo nihil sed dolorum ipsum numquam reprehenderit maxime, deleniti facilis molestiae asperiores labore!</p>
+        
+            <button title="Chiudi" class="close_modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+    </div>
+    <!-- FINE MODAL -->
+
+<!-- carico il plugin JS - è un plugin in JS vanilla, quindi non carico nient'altro prima -->
+    <script src="js/moveTo.min.js"></script>
+    <!-- script per AOS  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Script per modale -->
+  <script src="js/modal.js"></script>
+    <script src="js/app.js"></script>
+
+    
+</body>
+</html>
