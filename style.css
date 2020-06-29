@@ -56,6 +56,7 @@ img{
 .myp-0_5{padding: 0.5rem;}
 .myp-1{padding: 1rem;}
 .myp-1_5{padding: 1.5rem;}
+.tac{text-align: center;}
 
 /* classi fast*/
 
@@ -165,6 +166,10 @@ section.slogan p{font-size: 2rem;}
     footer.col-3{
         column-gap: 0;
     }
+    .col-4{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
 
 }
 
@@ -194,5 +199,47 @@ footer .col{
 .lang{
     justify-content: flex-end;
     align-items: center;
+}
+
+section#faq{
+    padding: 1rem 10vw;
+    background-color: var(--color5);
+}
+
+section#faq a{
+    text-decoration: underline;
+    color: black;
+}
+#flotta h3{
+    font-size: 1.7rem;
+}
+#flotta ul li{
+    font-size: 0.7rem;
+}
+.el-price{
+    font-size: 2.5rem;
+    color: brown;
+    text-align: center;
+}
+li.card-item{
+    border: 1px solid #444444;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+li.card-item:hover{
+    transform: scale(1.1);
+}
+.col-2-all{
+    grid-template-columns: 1fr 1fr;
+}
+ul.col-4{padding: 1rem;}
+.el-info ul{
+    padding-left: 0.2rem;
+}
+.energy{
+    overflow: hidden;
 }
 
