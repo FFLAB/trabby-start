@@ -201,6 +201,45 @@ footer .col{
     align-items: center;
 }
 
+/* Style for accordion */
+.accordion-toggle {
+    display: block;
+  }
+  
+  .accordion-content {
+    display: none;
+  }
+  
+  .accordion-content.active {
+    display: block;
+  }
+
+  section#faq{
+      padding: 1rem 10vw;
+      background-color: var(--color5);
+  }
+  .accordion-content.active p{
+    font-size: 1.3rem;
+    color: #333333;
+    opacity: 0;
+}
+/* mia animazione fade sfruttando il toggle active */
+.accordion-content.active p { 
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+  }
+  @keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 section#faq{
     padding: 1rem 10vw;
     background-color: var(--color5);
@@ -239,6 +278,7 @@ ul.col-4{padding: 1rem;}
 .el-info ul{
     padding-left: 0.2rem;
 }
+/* per le animazioni slide nella energy, altrimenti problemi nella larghezza in modalita mobile! */
 .energy{
     overflow: hidden;
 }
