@@ -138,6 +138,7 @@ section.slogan p{font-size: 2rem;}
 /* icone social */
 .social-brands{
     justify-content: flex-end;
+    padding: 1rem 2rem;
 }
 .fab{
     padding: 10px;
@@ -195,6 +196,9 @@ footer .col{
     background-color: var(--color2);
     color: #ffffff;
     padding: 50px;
+}
+footer a{
+    color: white;
 }
 .lang{
     justify-content: flex-end;
